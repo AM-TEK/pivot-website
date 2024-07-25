@@ -201,6 +201,7 @@ body {
   line-height: 1.6;
   max-width: 1200px;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   display: flex;
@@ -231,6 +232,11 @@ body {
   max-width: 300px;
   display: block;
   margin: 0 auto 20px;
+}
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+  letter-spacing: -0.9px;
 }
 h1 {
   font-size: 2.5em;
@@ -328,6 +334,7 @@ ul {
   color: #746151;
   font-size: 20px;
   margin-left: 0;
+  font-family: 'Merriweather', serif;
 }
 .container-two .author {
   text-align: left;
