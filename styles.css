@@ -382,3 +382,91 @@ ul {
       width: 100%;
   }
 }
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #faf7f5;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.testimonials .right-column {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  border-bottom: 1px solid #746151;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #e4deda;
+  border-radius: 5px;
+}
+
+.testimonial p {
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.testimonial .author {
+  text-align: right;
+  color: #746151;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* icf badge */
+.badge {
+  width: 120px;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Speaker Events Section */
+.speaker-events {
+  background-color: #faf7f5;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.speaker-events h2 {
+  border-bottom: 1px solid #746151;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.events-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .events-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .events-gallery {
+      grid-template-columns: 1fr; /* 1 image per row on small screens */
+  }
+}
+
+
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
