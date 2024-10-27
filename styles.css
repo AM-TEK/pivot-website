@@ -390,36 +390,80 @@ ul {
   margin-top: 20px;
 }
 
-.testimonials .right-column {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 .testimonials h2 {
   border-bottom: 1px solid #746151;
   padding-bottom: 10px;
   color: #333;
 }
 
-.testimonial {
-  margin-bottom: 30px;
-  padding: 15px;
-  background-color: #e4deda;
-  border-radius: 5px;
-}
-
-.testimonial p {
-  font-family: 'Roboto', sans-serif;
+/* Style each testimonial as a card */
+.testimonials blockquote {
+  position: relative;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
   color: #444;
+  background-color: #fff;
+  margin: 40px 0;
+  padding: 40px;
   line-height: 1.6;
-  margin: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #333;
 }
 
-.testimonial .author {
+/* Opening double quote */
+.testimonials blockquote::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 5px; /* Adjusted to provide spacing */
+  width: 60px; /* Combined width for both quotes */
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M70 20C45 20 30 35 30 60c0 15 10 25 22 25 12 0 20-8 20-18 0-10-7-16-15-16-4 0-8 1-11 4 0-15 10-25 25-25 3 0 6 0 8 1l-3-10c-2-1-4-1-6-1z' fill='%23848A34'/%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M70 20C45 20 30 35 30 60c0 15 10 25 22 25 12 0 20-8 20-18 0-10-7-16-15-16-4 0-8 1-11 4 0-15 10-25 25-25 3 0 6 0 8 1l-3-10c-2-1-4-1-6-1z' fill='%23848A34'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right; /* Position the quotes side by side */
+}
+
+/* Closing double quote */
+.testimonials blockquote::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: 5px; /* Adjusted to provide spacing */
+  width: 60px; /* Combined width for both quotes */
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 80C55 80 70 65 70 40c0-15-10-25-22-25-12 0-20 8-20 18 0 10 7 16 15 16 4 0 8-1 11-4 0 15-10 25-25 25-3 0-6 0-8-1l3 10c2 1 4 1 6 1z' fill='%23848A34'/%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 80C55 80 70 65 70 40c0-15-10-25-22-25-12 0-20 8-20 18 0 10 7 16 15 16 4 0 8-1 11-4 0 15-10 25-25 25-3 0-6 0-8-1l3 10c2 1 4 1 6 1z' fill='%23848A34'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right; /* Position the quotes side by side */
+}
+
+/* Add padding to prevent text from overlapping with quotes */
+.testimonials blockquote p {
+  position: relative;
+  margin: 0;
+  padding: 0 30px;
+}
+
+/* Cite styling */
+.testimonials cite {
+  display: block;
   text-align: right;
   color: #746151;
-  font-style: italic;
-  margin-top: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+/* Add some spacing between testimonials */
+.testimonials blockquote + blockquote {
+  margin-top: 40px;
 }
 
 /* icf badge */
